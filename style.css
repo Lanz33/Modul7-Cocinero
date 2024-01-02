@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    font-family: Calibri;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color:#FF8000 ;
+  }
+
+.header {
+    background-color: #FF8000;
+    height: 128px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+}
+
+.fullScreen {
+    display: flex;
+    flex-direction: row;
+    padding-top: 128px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    min-height: 50vh;
+    width: 100%;
+}
+
+.localFlyer{
+    width: 100%;
+}
+
+.orderSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+    max-width: 850px;
+    flex-direction: column;
+}
+
+.recipe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 8px;
+    border: #000000 1px solid;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.recipe:hover {
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.recipePic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 150px;
+    width: 100%;
+}
+
+.flyer {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+p{
+    text-align: center;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 32px;
+    width: 200px;
+}
+
+.cocineroPic {
+    margin-left: 8px;
+}
+
+h2 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-family: Calibri;
+}
+
+h1{
+    text-align: center;
+    font-family: Calibri;
+}
+
+.price {
+    color: #FF8000;
+    margin-left: 16px;
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.hiddenOrderButton {
+    display: none;
+    position: sticky;
+    left: 30px;
+    width: 80%;
+    right: 30px;
+    bottom: 10px;
+    height: 50px;
+    background-color: #FF8000;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 20px;
+    max-width: 350px;
+}
+
+.hiddenBasket {
+    display: none;
+    top: 128px;
+    right: 0px;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.orderButton {
+    height: 30px;
+    width: 30px;
+}
+
+.orderButton:hover {
+    cursor: pointer;
+}
+
+.basket {
+    position: sticky;
+    top: 128px;
+    right: 0px;
+    height: 50vh;
+    width: 300px;
+}
+
+table#order {
+    width: 100%;
+}
+
+td#order:first-child {
+    min-width: 95px;
+}
+
+td#order:nth-child(2) {
+    width: 40px;
+    text-align: center;
+}
+
+td#order:nth-child(3) {
+    width: 30px;
+    text-align: center;
+}
+
+td#order:nth-child(4) {
+    width: 40px;
+    text-align: center;
+}
+
+td#order:nth-child(5) {
+    width: 70px;
+    text-align: right;
+    right: 30px;
+}
+
+td#order:nth-child(6) {
+    width: 17px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.basketHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basketPrice {
+    margin-top: 32px;
+    width: 100%;
+    height: 50px;
+    background-color: #FF8000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+.basketPrice:hover {
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+.bc-grey {
+    background-color: #EFEDEA;
+}
+
+.minimum {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    border: #000000 1px solid;
+    border-radius: 20px;
+    padding-left: 8px;
+    background-color: #F5F5F5;
+}
+
+.blank {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+
+.overViewCost {
+    margin-top: 16px;
+    padding-left: 8px;
+}
+
+td#total {
+    text-align: right;
+}
+
+td#minCost:nth-child(3) {
+    width: 14px;
+}
+
+u {
+    margin-left: 24px;
+}
+
+.back {
+    height: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFEDEA;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 32px;
+}
+
+.footer {
+    height: 100px;
+    background: linear-gradient(0deg, rgba(75, 75, 75, 0.5) 0%, rgba(75, 75, 75, 0.01) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    font-size: 16px;
+}
+
+.basketHeadHidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hiddenFinishButton{
+    display: flex;
+    position: static;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #FF8000;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 20px;
+    max-width: 350px;
+    cursor: pointer;
+    margin: 16px;
+}
+
+@media(max-width: 800px) {
+    .ingredient {
+        display: none;
+    }
+
+    .description {
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 690px) {
+    .basket {
+        display: none;
+    }
+
+    .hiddenOrderButton {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .hiddenBasket {
+        display: block;
+        position: sticky;
+    }
+}
+
+@media(max-width: 460px) {
+    .name {
+        font-size: 18px;
+        width: 60px;
+    }
+}
